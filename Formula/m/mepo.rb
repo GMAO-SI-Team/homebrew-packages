@@ -25,7 +25,7 @@ class Mepo < Formula
   end
 
   test do
-    system bin/"mepo", "clone", "https://github.com/GMAO-SI-Team/mepo-test.git"
+    system bin/"git", "clone", "https://github.com/GMAO-SI-Team/mepo-test.git"
     cd testpath/"mepo-test" do
       system bin/"mepo", "clone"
       system bin/"mepo", "status"
