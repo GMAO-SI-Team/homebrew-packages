@@ -22,6 +22,14 @@ class Mepo < Formula
 
   def install
     virtualenv_install_with_resources
+
+    # Install bash and zsh completion
+    bash_completion.install "etc/mepo-completion.bash"
+    zsh_completion.install "etc/mepo-completion.zsh"
+
+    # Install the mepo-cd.bash and mepo-cd.zsh scripts
+    bash_completion.install "etc/mepo-cd.bash"
+    zsh_completion.install "etc/mepo-cd.zsh"
   end
 
   test do
