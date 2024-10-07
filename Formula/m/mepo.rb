@@ -29,7 +29,7 @@ class Mepo < Formula
 
     # Install the mepo-cd.bash and mepo-cd.zsh scripts
     bash_completion.install "etc/mepo-cd.bash"
-    #zsh_completion.install "etc/mepo-cd.zsh"
+    zsh_completion.install "etc/mepo-cd.zsh"
   end
 
   test do
