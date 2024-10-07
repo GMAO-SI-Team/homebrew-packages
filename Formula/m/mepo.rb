@@ -23,13 +23,14 @@ class Mepo < Formula
   def install
     virtualenv_install_with_resources
 
-    # Install bash and zsh completion
-    bash_completion.install "etc/mepo-completion.bash"
     zsh_completion.install  "etc/mepo-completion.bash"
-
-    # Install the mepo-cd.bash and mepo-cd.zsh scripts
-    bash_completion.install "etc/mepo-cd.bash"
     zsh_completion.install  "etc/mepo-cd.zsh"
+
+    # For some reason, Brew cannot install the etc/mepo-completion.bash file
+    # but it can for zsh. And it can install the etc/mepo-cd.bash file. We
+    # are baffled.
+    #bash_completion.install "etc/mepo-completion.bash"
+    bash_completion.install "etc/mepo-cd.bash"
   end
 
   test do
