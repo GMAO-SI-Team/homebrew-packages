@@ -29,7 +29,7 @@ class Mepo < Formula
     # For some reason, Brew cannot install the etc/mepo-completion.bash file
     # but it can for zsh. And it can install the etc/mepo-cd.bash file. We
     # are baffled.
-    #bash_completion.install "etc/mepo-completion.bash"
+    # bash_completion.install "etc/mepo-completion.bash"
     bash_completion.install "etc/mepo-cd.bash"
   end
 
