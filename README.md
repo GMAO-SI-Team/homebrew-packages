@@ -10,7 +10,7 @@ Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`
 
 ```ruby
 tap "gmao-si-team/packages"
-brew "<formula>"
+brew "mepo"
 ```
 
 ## Documentation
