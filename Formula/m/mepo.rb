@@ -3,8 +3,8 @@ class Mepo < Formula
 
   desc "Tool to manage (m)ultiple git r(epo)sitories"
   homepage "https://github.com/GEOS-ESM/mepo"
-  url "https://github.com/GEOS-ESM/mepo/archive/refs/tags/v2.3.0.tar.gz"
-  sha256 "d80530c98c72f2f5429e36a604541e332693a8874a57a6ba50a1bc9ed706c90e"
+  url "https://github.com/GEOS-ESM/mepo/archive/refs/tags/v2.3.1.tar.gz"
+  sha256 "5ed41ecec1ecff2d51d861def44f59d4e92b44f555a913f07284b993395c83e1"
   license "Apache-2.0"
 
   depends_on "libyaml"
